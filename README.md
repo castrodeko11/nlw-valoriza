@@ -232,7 +232,7 @@ a rota e verificar se o usuário está mesmo autenticado para seguir ao seu dest
 * Verificar se o token é válido;
 * Recuperar informações do usuário.
 
-Obs: No Imsomnia, temos o *Bearer token* onde passamos o token gerado do usuário.
+Obs: No Insomnia, temos o *Bearer token* onde passamos o token gerado do usuário.
 
 
 Vamos adicionar o *user_id* como um objeto que vai vir do *request* do usuário. Mas na biblioteca padrão, não temos ele, o TypeScript permite que sobrescrevamos algumas tipagens, então iremos adicionar essa nova tipagem em uma arquivo e pasta com o mesmo nome da lib(library) original e adicionar esse caminho na propriedade *typeRoots*, que são pacotes de tipagem do arquivo *tsconfig.json* para poder 
