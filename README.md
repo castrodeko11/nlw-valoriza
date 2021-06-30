@@ -49,6 +49,9 @@ Sistema para fazer elogio a outros usuários por meio de tags.
 # Clone este repositório
 $ git clone https://github.com/castrodeko11/nlw-valoriza.git
 
+# Instalar as dependências
+$ yarn
+
 # Executar aplicação
 $ yarn dev
 ```
