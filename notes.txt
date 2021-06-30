@@ -1,0 +1,55 @@
+Criar o inicio do projeto 
+    yarn init -y
+
+Iniciar yarn
+    yarn tsc --init
+
+Conveter para javascript (opcional)
+    yarn tsc
+
+Gerenciar rotas
+    yarn add express 
+
+Tipagens das libs example
+    yarn add @types/express -D
+
+Conveter o typescript para o node conseguir entender
+    yarn add ts-node-dev -D
+
+
+
+
+app.get("/teste", (request, response) => {
+    return response.send("Olá Amdré Oliveira");
+})
+
+
+app.post("/teste-post", (request, response) => {
+    return response.send("Olá Amdré Oliveira");
+})
+
+
+// Tipos de parâmetros
+Routes Params => http://localhost:3000/produtos/754123654
+Query Params => http://localhost:3000/produtos?name=teclado&description=tecladobom
+
+Body Params => {
+    "name": "teclado",
+    "description": "teclado bom"
+}
+
+
+// instalar banco de dados
+yarn add typeorm reflect-metadata sqlite3
+
+// Validar typeorm
+yarn typeorm -help
+
+//type orm run
+yarn typeorm migration:run 
+
+yarn typeorm migration:revert 
+
+
+// Captuarar erros das outras camadas no server
+yarn add express-async-errors
